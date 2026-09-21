@@ -1,0 +1,993 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f4f3ed;
+    color: #171717;
+}
+
+
+/* =========================================
+   PAGE
+========================================= */
+
+.page {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 18px 24px 45px;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 66px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 9px 18px;
+
+    background: #e8e7e1;
+    border-radius: 18px;
+
+    margin-bottom: 10px;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    flex-shrink: 0;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+
+    height: 42px;
+
+    padding: 4px;
+
+    background: #111111;
+
+    border-radius: 40px;
+
+    flex-shrink: 0;
+}
+
+.nav-menu a {
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 30px;
+
+    border-radius: 30px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: all 0.25s ease;
+}
+
+.nav-menu a:hover {
+    background: #292929;
+}
+
+.nav-menu a.active {
+    background: #f5f4ef;
+    color: #111111;
+}
+
+
+/* =========================================
+   CONTACT BUTTON
+========================================= */
+
+.contact-button {
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 0 8px 0 16px;
+
+    background: #111111;
+    color: #ffffff;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    flex-shrink: 0;
+}
+
+.arrow {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f5f4ef;
+    color: #111111;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    width: 100%;
+    height: 650px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #e9e8e2;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    padding-top: 60px;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* =========================================
+   HERO SYMBOL
+========================================= */
+
+.faith-symbol {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 28px;
+
+    border-radius: 50%;
+
+    background: #f5f4ef;
+
+    color: #222222;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   HERO TITLE
+========================================= */
+
+.hero h1 {
+    font-size: clamp(52px, 5vw, 76px);
+
+    line-height: 1.05;
+
+    letter-spacing: -4px;
+
+    font-weight: 700;
+
+    color: #111111;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================
+   HERO TEXT
+========================================= */
+
+.hero-text {
+    width: 100%;
+    max-width: 640px;
+
+    margin: 0 auto;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: #4a4a46;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 28px;
+
+    margin-top: 26px;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 21px;
+
+    background: #111111;
+    color: #ffffff;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    transition: 0.25s ease;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #171717;
+
+    font-size: 10px;
+
+    text-decoration: underline;
+}
+
+.secondary-button span {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #111111;
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-people {
+    position: absolute;
+
+    left: 50%;
+    bottom: -25px;
+
+    transform: translateX(-50%);
+
+    width: 76%;
+    max-width: 1050px;
+
+    height: 345px;
+
+    overflow: hidden;
+
+    border-radius: 50% 50% 0 0;
+}
+
+.hero-people img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+    width: 100%;
+
+    padding: 75px 0 55px;
+
+    text-align: center;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 21px;
+
+    border: 1px solid #292929;
+
+    border-radius: 30px;
+
+    font-size: 10px;
+
+    margin-bottom: 23px;
+}
+
+.about h2,
+.blog h2 {
+    font-size: clamp(32px, 3vw, 46px);
+
+    line-height: 1.18;
+
+    letter-spacing: -2px;
+
+    color: #111111;
+}
+
+.about-intro {
+    max-width: 480px;
+
+    margin: 20px auto 43px;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #555550;
+}
+
+
+/* =========================================
+   ABOUT GRID
+========================================= */
+
+.about-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.9fr;
+
+    gap: 12px;
+
+    text-align: left;
+}
+
+.about-image {
+    width: 100%;
+    height: 285px;
+
+    overflow: hidden;
+
+    border-radius: 9px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   INFO CARDS
+========================================= */
+
+.info-card {
+    width: 100%;
+    height: 285px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 22px;
+
+    background: #e8e7e1;
+
+    border-radius: 9px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+}
+
+.card-title h3 {
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.card-icon {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111111;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+}
+
+.info-card p {
+    max-width: 340px;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    color: #4b4b47;
+}
+
+
+/* =========================================
+   BLOG
+========================================= */
+
+.blog {
+    width: 100%;
+
+    padding: 55px 0 100px;
+}
+
+.blog-header {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: end;
+
+    gap: 60px;
+
+    margin-bottom: 35px;
+}
+
+.blog-header > p {
+    max-width: 390px;
+
+    justify-self: end;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #555550;
+}
+
+
+/* =========================================
+   BLOG IMAGE
+========================================= */
+
+.blog-image {
+    position: relative;
+
+    width: 100%;
+    max-width: 940px;
+
+    height: 360px;
+
+    overflow: hidden;
+
+    border-radius: 9px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    width: 46px;
+    height: 46px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(250, 249, 244, 0.9);
+
+    color: #111111;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   ARTICLE
+========================================= */
+
+.article {
+    width: 100%;
+    max-width: 940px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding-top: 20px;
+}
+
+.article h3 {
+    font-size: 13px;
+
+    margin-bottom: 10px;
+}
+
+.article p {
+    max-width: 370px;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    color: #555550;
+}
+
+.read-more {
+    flex-shrink: 0;
+
+    padding: 8px 17px;
+
+    border: 1px solid #222222;
+
+    border-radius: 30px;
+
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+    width: 100%;
+
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background: #e8e7e1;
+
+    border-radius: 14px;
+}
+
+.contact h2 {
+    font-size: clamp(35px, 4vw, 50px);
+
+    letter-spacing: -2px;
+
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 10px;
+
+    margin-bottom: 25px;
+
+    color: #555550;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1600px) {
+
+    .page {
+        max-width: 1550px;
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navbar {
+        min-height: 70px;
+    }
+
+    .nav-menu {
+        height: 44px;
+    }
+
+    .nav-menu a {
+        height: 36px;
+
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .hero {
+        height: 720px;
+    }
+
+    .hero h1 {
+        font-size: 82px;
+    }
+
+    .hero-people {
+        width: 75%;
+
+        height: 390px;
+    }
+
+    .about-image,
+    .info-card {
+        height: 330px;
+    }
+
+    .blog-image {
+        max-width: 1050px;
+
+        height: 410px;
+    }
+
+    .article {
+        max-width: 1050px;
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .page {
+        padding: 12px;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .nav-menu a {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .hero {
+        height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero-people {
+        width: 85%;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .blog-image,
+    .article {
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 680px) {
+
+    .page {
+        padding: 7px;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        min-height: 55px;
+
+        padding: 7px 10px;
+
+        gap: 7px;
+
+        border-radius: 14px;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    .logo-icon {
+        width: 25px;
+        height: 25px;
+
+        font-size: 21px;
+    }
+
+    .nav-menu {
+        height: 36px;
+
+        padding: 3px;
+
+        margin-left: auto;
+    }
+
+    .nav-menu a {
+        height: 30px;
+
+        padding: 0 9px;
+
+        font-size: 7px;
+    }
+
+    .contact-button {
+        height: 36px;
+
+        padding-left: 9px;
+        padding-right: 5px;
+
+        gap: 5px;
+
+        font-size: 7px;
+    }
+
+    .arrow {
+        width: 24px;
+        height: 24px;
+
+        font-size: 9px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: 550px;
+
+        padding: 45px 15px 0;
+
+        border-radius: 10px;
+    }
+
+    .faith-symbol {
+        width: 34px;
+        height: 34px;
+
+        font-size: 16px;
+
+        margin-bottom: 23px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 9px;
+    }
+
+    .hero-buttons {
+        gap: 18px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        font-size: 9px;
+    }
+
+    .hero-people {
+        width: 100%;
+
+        height: 250px;
+
+        bottom: -15px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        padding: 55px 0 35px;
+    }
+
+    .about h2,
+    .blog h2 {
+        font-size: 26px;
+
+        letter-spacing: -1px;
+    }
+
+    .about-intro {
+        font-size: 9px;
+
+        margin-bottom: 30px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image,
+    .info-card {
+        height: 230px;
+    }
+
+
+    /* BLOG */
+
+    .blog {
+        padding: 35px 0 70px;
+    }
+
+    .blog-header {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .blog-header > p {
+        justify-self: start;
+
+        font-size: 9px;
+    }
+
+    .blog-image,
+    .article {
+        width: 100%;
+
+        max-width: 100%;
+    }
+
+    .blog-image {
+        height: 250px;
+    }
+
+    .article {
+        gap: 15px;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        padding: 65px 15px;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+}
